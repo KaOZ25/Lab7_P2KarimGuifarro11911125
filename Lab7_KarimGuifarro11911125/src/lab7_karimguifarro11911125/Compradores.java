@@ -18,9 +18,8 @@ public class Compradores extends users{
     public Compradores() {
     }
 
-    public Compradores(ArrayList<accesorios> comprador, int dinero, String usuario, String contraseña, int edad) {
+    public Compradores(String usuario, String contraseña, int edad, int dinero) {
         super(usuario, contraseña, edad);
-        this.comprador = comprador;
         this.dinero = dinero;
     }
 

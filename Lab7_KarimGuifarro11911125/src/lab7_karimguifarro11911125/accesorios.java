@@ -11,14 +11,15 @@ package lab7_karimguifarro11911125;
  */
 public class accesorios {
     String id,nombre;
-    int precio;
+    int cantid,precio;
 
     public accesorios() {
     }
 
-    public accesorios(String id, String nombre, int precio) {
+    public accesorios(String id, String nombre, int cantid, int precio) {
         this.id = id;
         this.nombre = nombre;
+        this.cantid = cantid;
         this.precio = precio;
     }
 
@@ -38,6 +39,14 @@ public class accesorios {
         this.nombre = nombre;
     }
 
+    public int getCantid() {
+        return cantid;
+    }
+
+    public void setCantid(int cantid) {
+        this.cantid = cantid;
+    }
+
     public int getPrecio() {
         return precio;
     }
@@ -48,7 +57,8 @@ public class accesorios {
 
     @Override
     public String toString() {
-        return "id=" + id + ", nombre=" + nombre + ", precio=" + precio + '}';
+        return "accesorios{" + "id=" + id + ", nombre=" + nombre + ", cantid=" + cantid + ", precio=" + precio + '}';
     }
-    
+
+     
 }
